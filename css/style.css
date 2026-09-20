@@ -1,0 +1,129 @@
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background:#f4f6f9;
+}
+.navbar{
+    backdrop-filter: blur(12px);
+    background: rgba(255,255,255,0.85);
+}
+
+.hero h1 span{ color:#93c5fd; }
+.stat-card{
+    border-radius:16px;
+    transition:all .3s ease;
+}
+.stat-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+.card{
+    border:none;
+    border-radius:16px;
+    transition:all .3s ease;
+}
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+.fade-up{
+    opacity:0;
+    transform:translateY(30px);
+    transition:all .8s ease;
+}
+.fade-up.show{
+    opacity:1;
+    transform:translateY(0);
+}
+footer{
+    background:#111827;
+    color:#9ca3af;
+}
+
+.about-image {
+    position: relative;
+}
+
+.about-badge {
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    background: #1e3a8a; 
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.about-badge h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.about-badge small {
+    display: block;
+    font-size: 0.85rem;
+}
+
+footer h5{ color:white; }
+
+@media (max-width: 992px) {
+    /* Hero */
+    .hero {
+        padding: 80px 20px;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .hero .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Stats */
+    .stat-card {
+        margin-bottom: 20px;
+    }
+
+    /* About Section */
+    .about-image {
+        margin-top: 30px;
+    }
+    .about-badge {
+        bottom: -5px;
+        left: 0;
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* News cards */
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Hero */
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    /* About Section */
+    .about-badge {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    /* Navbar */
+    .navbar-nav .nav-item {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+}

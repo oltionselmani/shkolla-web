@@ -1,0 +1,85 @@
+/* Carousel wrapper */
+.info-carousel {
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    height: 300px; /* Fiks, nuk ndryshon */
+}
+
+/* Carousel inner images */
+.info-carousel img {
+    width: 100%;
+    height: 100%; /* mbush carousel fiks */
+    object-fit: cover; /* mbulon tërësisht pa deformim */
+    display: block;
+    transition: transform 0.4s ease;
+    border-radius: 15px;
+}
+
+.info-carousel:hover img {
+    transform: scale(1.03);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .info-carousel {
+        height: 250px; /* ma i vogël për mobile */
+    }
+    .info-carousel img {
+        height: 100%;
+    }
+}
+
+
+
+
+
+
+.info-content h3 {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.carousel-inner img {
+  width: 100%;
+  display: block;
+}
+
+.card-custom {
+    border-radius: 15px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.card-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 30px rgba(0,0,0,0.25);
+}
+
+/* Animacion fade-up për scroll */
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+a.btn-outline-light {
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+
+
+a.btn-outline-light:hover {
+    background: #2563eb;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
